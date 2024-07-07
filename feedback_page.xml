@@ -1,0 +1,78 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+	android:background="#b0000000"
+	android:visibility="gone"
+	android:id="@+id/feedback_page">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="330dp"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingBottom="15dp"
+		android:background="@drawable/shadow1">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:orientation="vertical"
+			android:background="@drawable/rec1"
+			android:paddingTop="10dp"
+			android:paddingLeft="10dp">
+			<TextView
+				android:id="@+id/feedback_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#ffffff"
+				android:textStyle="bold"
+				android:fontFamily="@drawable/arial"
+				android:textSize="12dp"/>
+		</LinearLayout>
+
+		<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingRight="10dp"
+			android:paddingLeft="10dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="15dp"
+			android:gravity="center">
+
+			<TextView
+				android:id="@+id/feedback_content"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#c536085B"
+				android:textStyle="bold"
+				android:fontFamily="@drawable/arial"
+				android:textSize="11dp"/>
+		</ScrollView>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingTop="5dp"
+			android:paddingRight="20dp"
+			android:gravity="right">
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="80dp"
+				android:layout_height="27dp"
+				android:background="@drawable/rec2"
+				android:onClick="close_feedback"
+				android:id="@+id/button_feedback_ok">
+				<TextView
+					android:text="Ok"
+					android:layout_width="80dp"
+					android:layout_height="27dp"
+					android:gravity="center"
+					android:textColor="#ffffff"
+					android:textStyle="bold"
+					android:fontFamily="@drawable/arial"
+					android:textSize="11dp"/>
+			</LinearLayout>
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>

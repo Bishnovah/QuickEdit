@@ -1,0 +1,355 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:background="#AA270245"
+		android:orientation="horizontal"
+		android:paddingBottom="5dp"
+		android:paddingRight="5dp"
+		android:paddingLeft="8dp"
+		android:paddingTop="5dp"
+		android:id="@+id/title_bar">
+		
+    <TextView
+		android:text="QuickEdit"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:textColor="#FFFFFF"
+		android:textStyle="bold"
+		android:gravity="center"
+		android:fontFamily="@drawable/arial"
+		android:textSize="11dp"/>
+
+</LinearLayout>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="30dp"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:paddingBottom="15dp"
+		android:orientation="vertical">
+		
+	
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="10dp"
+		/>
+	
+		<TextView
+			android:text="Notes [ Voice to Text ]"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="27dp"
+			android:textColor="#AA270245"
+			android:textStyle="bold"
+			android:translationY="13dp"
+			android:fontFamily="@drawable/arial"
+			android:textSize="11dp"/>
+		
+		<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingRight="0dp"
+			android:paddingLeft="20dp"
+			android:orientation="horizontal">
+
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="550dp"
+				android:gravity="center"
+				android:orientation="horizontal"
+				android:id="@+id/pages">
+
+			</LinearLayout>
+		</HorizontalScrollView>
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+		<TextView
+			android:text="Total Page:"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#a536085B"
+			android:textStyle="bold"
+			android:fontFamily="@drawable/arial"
+			android:textSize="9dp"/>
+		<TextView
+			android:layout_width="5dp"
+			android:layout_height="0dp"
+		/>
+			<TextView
+				android:id="@+id/current_page"
+				android:text=""
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#a536085B"
+				android:textStyle="bold"
+				android:fontFamily="@drawable/arial"
+				android:textSize="9dp"/>
+		<TextView
+			android:layout_width="5dp"
+			android:layout_height="0dp"
+		/>
+		<TextView
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#a536085B"
+			android:textStyle="bold"
+			android:fontFamily="@drawable/arial"
+			android:textSize="9dp"/>
+		<TextView
+			android:layout_width="5dp"
+			android:layout_height="0dp"
+		/>
+		<TextView
+			android:id="@+id/total_page"
+			android:text=""
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#a536085B"
+			android:textStyle="bold"
+			android:fontFamily="@drawable/arial"
+			android:textSize="9dp"/>
+	</LinearLayout>
+	
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="20dp"
+		/>
+	
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+			
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:onClick="listen"
+				android:id="@+id/button_listen">
+
+				<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="65dp"
+					android:layout_height="65dp"
+					android:gravity="center">
+					
+				<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="65dp"
+					android:layout_height="65dp"
+					android:gravity="center"
+					android:visibility="gone"
+					android:id="@+id/listen_cir1">
+					
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="65dp"
+					android:layout_height="65dp"
+					android:background="@drawable/circle4"
+					android:gravity="center"
+					android:id="@+id/listen_cir2">
+				</LinearLayout>
+				
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="65dp"
+						android:layout_height="65dp"
+						android:gravity="center">
+						<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="50dp"
+							android:layout_height="50dp"
+							android:background="@drawable/circle2"
+							android:gravity="center">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="50dp"
+					android:layout_height="50dp"
+					android:background="@drawable/circle5"
+					android:gravity="center"
+					android:id="@+id/listen_cir3">
+				</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="65dp"
+						android:layout_height="65dp"
+						android:gravity="center">
+						<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="38dp"
+							android:layout_height="38dp"
+							android:background="@drawable/circle2"
+							android:gravity="center">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="38dp"
+					android:layout_height="38dp"
+					android:background="@drawable/circle3"
+					android:id="@+id/listen_cir4">
+				</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					
+				</RelativeLayout>
+				
+					<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="65dp"
+						android:layout_height="65dp"
+						android:gravity="center">
+						<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+							android:layout_width="28dp"
+							android:layout_height="28dp"
+							android:background="@drawable/circle2"
+							android:gravity="center">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="28dp"
+					android:layout_height="28dp"
+					android:background="@drawable/circle1"
+					android:orientation="vertical"
+					android:gravity="center"
+					android:id="@+id/listen_cir5">
+					
+					<ImageView
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:src="@drawable/icon_listen">
+					</ImageView>
+				</LinearLayout>
+						</LinearLayout>
+					</LinearLayout>
+					
+			</RelativeLayout>
+				
+				<TextView
+					android:id="@+id/listen_button_label"
+					android:text="Listen"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#d536085B"
+					android:textStyle="normal"
+					android:fontFamily="@drawable/arial"
+					android:translationY="-20dp"
+					android:textSize="9.5dp"/>
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="20dp"
+				android:layout_height="0dp"
+			/>
+		
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:onClick="new_page"
+				android:id="@+id/button_new_page">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="26dp"
+					android:layout_height="26dp"
+					android:background="@drawable/circle1"
+					android:orientation="vertical"
+					android:gravity="center">
+					<ImageView
+						android:layout_width="23dp"
+						android:layout_height="23dp"
+						android:src="@drawable/icon_next">
+					</ImageView>
+				</LinearLayout>
+				<TextView
+					android:text="New Page"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#d536085B"
+					android:textStyle="normal"
+					android:fontFamily="@drawable/arial"
+					android:translationY="0dp"
+					android:textSize="9.5dp"/>
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="60dp"
+				android:layout_height="0dp"
+			/>
+		
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:onClick="save"
+				android:id="@+id/button_save">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="26dp"
+					android:layout_height="26dp"
+					android:background="@drawable/circle1"
+					android:orientation="vertical"
+					android:gravity="center">
+					<ImageView
+						android:layout_width="35dp"
+						android:layout_height="35dp"
+						android:src="@drawable/icon_save">
+					</ImageView>
+				</LinearLayout>
+				<TextView
+					android:text="Save"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#d536085B"
+					android:textStyle="normal"
+					android:fontFamily="@drawable/arial"
+					android:translationY="0dp"
+					android:textSize="9.5dp"/>
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="20dp"
+				android:layout_height="0dp"
+			/>
+		
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:orientation="vertical"
+				android:onClick="clear"
+				android:id="@+id/button_clear">
+				<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="26dp"
+					android:layout_height="26dp"
+					android:background="@drawable/circle1"
+					android:gravity="center">
+					<ImageView
+						android:layout_width="23dp"
+						android:layout_height="23dp"
+						android:translationX="3dp"
+						android:src="@drawable/icon_del">
+					</ImageView>
+				</LinearLayout>
+				<TextView
+					android:text="Clear Pages"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#d536085B"
+					android:textStyle="normal"
+					android:fontFamily="@drawable/arial"
+					android:translationY="0dp"
+					android:textSize="9.5dp"/>
+			</LinearLayout>
+
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+	<include layout="@layout/feedback_page"/>
+		
+</RelativeLayout> 
